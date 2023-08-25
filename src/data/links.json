@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Personal Website",
+    "icon": "littlelink.svg",
+    "url": "https://martacodes.it/",
+    "buttonStyle": "default"
+  },
+  {
+    "title": "LinkedIn",
+    "icon": "linkedin.svg",
+    "url": "https://www.linkedin.com/in/martapancaldi/",
+    "buttonStyle": "linked"
+  },
+  {
+    "title": "Github",
+    "icon": "github.svg",
+    "url": "https://github.com/martapanc",
+    "buttonStyle": "github"
+  }
+]
