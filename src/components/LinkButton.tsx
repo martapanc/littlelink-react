@@ -5,7 +5,7 @@ interface LinkProps {
   link: Link
 }
 
-const LittleLink = ({link}: LinkProps) => {
+const LinkButton = ({link}: LinkProps) => {
   const iconSize = 32;
 
   return (
@@ -21,4 +21,4 @@ const LittleLink = ({link}: LinkProps) => {
   );
 }
 
-export default LittleLink;
+export default LinkButton;

@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import links from '@/data/links.json';
+import data from '@/data/data.json';
 import {Link} from "@/types/Link";
-import LittleLink from '@/components/LittleLink';
+import LinkButton from '@/components/LinkButton';
 
 export default function Home() {
   return (
@@ -10,14 +11,12 @@ export default function Home() {
         <div className="row">
           <div className="column mt-10 flex flex-col items-center">
             
-            <Image src="images/littlelink.svg" alt="Littlelink Logo" width="100" height="100" />
+            <Image className="rounded-3xl m-3" src={data.icon} alt={data.iconAlt} width="100" height="100" />
 
-            <h1 role="heading">LittleLink</h1>
-
-            <p>An open source DIY <a href="https://linktr.ee" target="_blank" rel="noopener" role="link">Linktree</a> alternative.</p>
+            <h1 className="mb-3" role="heading">{data.header}</h1>
 
             {links.map((link: Link) => (
-              <LittleLink key={link.title} link={link}/>
+              <LinkButton key={link.title} link={link}/>
             ))}
           </div>
         </div>
