@@ -244,7 +244,7 @@ button:hover,
 .button.button-cal {
   color: #FFFFFF;
   background-color: #292929;
-  border: 1px solid #FFFFFF;
+  /*border: 1px solid #FFFFFF;*/
 }
 .button.button-cal:hover,
 .button.button-cal:focus {
@@ -388,7 +388,7 @@ button:hover,
 .button.button-github {
   color: #ffffff;
   background-color: #000000;
-  border: 1px solid #FFFFFF;
+  /*border: 1px solid #FFFFFF;*/
 }
 .button.button-github:hover,
 .button.button-github:focus {
@@ -619,7 +619,7 @@ button:hover,
 .button.button-medium {
   color: #ffffff;
   background-color: #000000;
-  border: 1px solid #FFFFFF;
+  /*border: 1px solid #FFFFFF;*/
 }
 .button.button-medium:hover,
 .button.button-medium:focus {
@@ -1087,8 +1087,8 @@ button:hover,
 /* YouTube */
 .button.button-youtube {
   color: #ffffff;
-  background-color: #000000;
-  border: 1px solid #FFFFFF;
+  background-color: #090909;
+  /*border: 1px solid #FFFFFF;*/
 }
 .button.button-youtube:hover,
 .button.button-youtube:focus {
