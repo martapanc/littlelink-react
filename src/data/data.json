@@ -1,5 +1,8 @@
 {
-  "header": "Marta's Links",
+  "title": "Marta's Links",
+  "author": "Marta Pancaldi",
+  "description": "All my links in one place",
   "icon": "https://res.cloudinary.com/dwrurydlt/image/upload/v1693038096/avatar_md_292b112d97.png",
-  "iconAlt": "Marta Pancaldi"
+  "iconAlt": "Marta Pancaldi",
+  "footer": "Forked from [LittleLink](https://littlelink.io/).\n\n\"Reactified\" with \uD83D\uDC99 by Marta Pancaldi"
 }
