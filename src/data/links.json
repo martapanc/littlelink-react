@@ -53,12 +53,17 @@
     "url": "https://medium.com/@marta.panc",
     "buttonStyle": "medium"
   },
-
   {
     "title": "YouTube",
     "icon": "youtube.svg",
     "url": "https://www.youtube.com/@pancakemarta",
     "buttonStyle": "youtube"
+  },
+  {
+    "title": "Steam",
+    "icon": "steam.svg",
+    "url": "https://steamcommunity.com/id/martap/",
+    "buttonStyle": "steam"
   },
   {
     "title": "Telegram",

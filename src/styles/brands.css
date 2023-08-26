@@ -849,7 +849,7 @@ button:hover,
 /* Steam */
 .button.button-steam {
   color: #ffffff;
-  background-image: linear-gradient(90deg, #08BBFF, #2B75FF);
+  background:linear-gradient(320deg, #23799F, #000000);
 }
 .button.button-steam:hover,
 .button.button-steam:focus {
