@@ -41,11 +41,11 @@
 
 @layer base {
     .light > body {
-        background-color: #eae9e9;
+        background-color: #f9f9f9;
     }
 
     .dark > body {
-        background-color: #0c1018;
+        background-color: #011125;
     }
 
     .font-primary {

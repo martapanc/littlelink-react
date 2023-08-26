@@ -87,6 +87,33 @@ button:hover,
   filter: brightness(90%);
 }
 
+.button.button-website {
+  color: #ffffff;
+  background: linear-gradient(248deg, rgb(77, 212, 253) 0.7%, rgb(3, 151, 232) 26.1%, rgb(47, 31, 116) 95.7%);
+}
+.button.button-website:hover,
+.button.button-website:focus {
+  filter: brightness(90%);
+}
+
+.button.button-cv {
+  color: #ffffff;
+  background: radial-gradient(circle at 10% 20%, rgb(0, 93, 133) 0%, rgb(0, 181, 149) 90%);
+}
+.button.button-cv:hover,
+.button.button-cv:focus {
+  filter: brightness(90%);
+}
+
+.button.button-email {
+  color: #ffffff;
+  background: linear-gradient(to right, rgb(252, 74, 26), rgb(247, 183, 51));
+}
+.button.button-email:hover,
+.button.button-email:focus {
+  filter: brightness(90%);
+}
+
 /* Amazon */
 .button.button-amazon {
   color: #000000;

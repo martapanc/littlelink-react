@@ -3,7 +3,13 @@
     "title": "Personal Website",
     "icon": "code-white.svg",
     "url": "https://martacodes.it/",
-    "buttonStyle": "default"
+    "buttonStyle": "website"
+  },
+  {
+    "title": "CV",
+    "icon": "generic-blog.svg",
+    "url": "https://mpancaldi.web.app/static/media/MARTA%20PANCALDI%20-%20CV.ee506f6512f7df8ad525.pdf",
+    "buttonStyle": "cv"
   },
   {
     "title": "LinkedIn",
@@ -18,6 +24,12 @@
     "buttonStyle": "github"
   },
   {
+    "title": "Gitlab",
+    "icon": "gitlab.svg",
+    "url": "https://gitlab.com/users/mpancaldi/projects",
+    "buttonStyle": "gitlab"
+  },
+  {
     "title": "Instagram",
     "icon": "instagram.svg",
     "url": "https://www.instagram.com/pancakemarta/",
@@ -30,17 +42,18 @@
     "buttonStyle": "polywork"
   },
   {
-    "title": "Medium",
-    "icon": "medium.svg",
-    "url": "https://medium.com/@marta.panc",
-    "buttonStyle": "medium"
-  },
-  {
     "title": "GoodReads",
     "icon": "goodreads.svg",
     "url": "https://www.goodreads.com/topolinamarta",
     "buttonStyle": "goodreads"
   },
+  {
+    "title": "Medium",
+    "icon": "medium.svg",
+    "url": "https://medium.com/@marta.panc",
+    "buttonStyle": "medium"
+  },
+
   {
     "title": "YouTube",
     "icon": "youtube.svg",
@@ -58,5 +71,11 @@
     "icon": "cal.svg",
     "url": "https://cal.com/marta-pancaldi/",
     "buttonStyle": "cal"
+  },
+  {
+    "title": "marta_panc@me.com",
+    "icon": "generic-email.svg",
+    "url": "mailto:marta_panc@me.com",
+    "buttonStyle": "email"
   }
 ]
