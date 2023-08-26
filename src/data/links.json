@@ -1,7 +1,7 @@
 [
   {
     "title": "Personal Website",
-    "icon": "littlelink.svg",
+    "icon": "code-white.svg",
     "url": "https://martacodes.it/",
     "buttonStyle": "default"
   },
@@ -16,5 +16,47 @@
     "icon": "github.svg",
     "url": "https://github.com/martapanc",
     "buttonStyle": "github"
+  },
+  {
+    "title": "Instagram",
+    "icon": "instagram.svg",
+    "url": "https://www.instagram.com/pancakemarta/",
+    "buttonStyle": "instagram"
+  },
+  {
+    "title": "PolyWork",
+    "icon": "polywork.svg",
+    "url": "https://www.polywork.com/marta_pancaldi",
+    "buttonStyle": "polywork"
+  },
+  {
+    "title": "Medium",
+    "icon": "medium.svg",
+    "url": "https://medium.com/@marta.panc",
+    "buttonStyle": "medium"
+  },
+  {
+    "title": "GoodReads",
+    "icon": "goodreads.svg",
+    "url": "https://www.goodreads.com/topolinamarta",
+    "buttonStyle": "goodreads"
+  },
+  {
+    "title": "YouTube",
+    "icon": "youtube.svg",
+    "url": "https://www.youtube.com/channel/UCvQWDSKE8fY7srB8hO1vWNw",
+    "buttonStyle": "youtube"
+  },
+  {
+    "title": "Telegram",
+    "icon": "telegram.svg",
+    "url": "https://t.me/pancakemrt",
+    "buttonStyle": "telegram"
+  },
+  {
+    "title": "Schedule with Cal.com",
+    "icon": "cal.svg",
+    "url": "https://cal.com/marta-pancaldi/",
+    "buttonStyle": "cal"
   }
 ]

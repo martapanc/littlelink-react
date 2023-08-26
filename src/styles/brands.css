@@ -80,7 +80,7 @@ button:hover,
 /* Default (this is great for your own brand color!) */
 .button.button-default {
   color: #ffffff;
-  background-color: #2457F5;
+  background-color: #103ac7;
 }
 .button.button-default:hover,
 .button.button-default:focus {
@@ -391,7 +391,7 @@ button:hover,
 /* Goodreads */
 .button.button-goodreads {
   color: #333333;
-  background-color: #f3f1e6;
+  background-color: #efede2;
   border: 1px solid #212121;
 }
 .button.button-goodreads:hover,
@@ -560,7 +560,7 @@ button:hover,
 /* LinkedIn */
 .button.button-linked {
   color: #ffffff;
-  background-color: #2867b2;
+  background-color: #0F66C2;
 }
 .button.button-linked:hover,
 .button.button-linked:focus {
@@ -658,6 +658,17 @@ button:hover,
 }
 .button.button-pinterest:hover,
 .button.button-pinterest:focus {
+  filter: brightness(90%);
+}
+
+/* Polywork */
+.button.button-polywork {
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 1px solid #582BE8;
+}
+.button.button-polywork:hover,
+.button.button-polywork:focus {
   filter: brightness(90%);
 }
 
@@ -1047,13 +1058,13 @@ button:hover,
 }
 
 /* YouTube */
-.button.button-yt {
+.button.button-youtube {
   color: #ffffff;
   background-color: #000000;
   border: 1px solid #FFFFFF;
 }
-.button.button-yt:hover,
-.button.button-yt:focus {
+.button.button-youtube:hover,
+.button.button-youtube:focus {
   filter: brightness(90%);
 }
 
