@@ -36,16 +36,22 @@
     "buttonStyle": "instagram"
   },
   {
+    "title": "GoodReads",
+    "icon": "goodreads.svg",
+    "url": "https://www.goodreads.com/topolinamarta",
+    "buttonStyle": "goodreads"
+  },
+  {
     "title": "PolyWork",
     "icon": "polywork.svg",
     "url": "https://www.polywork.com/marta_pancaldi",
     "buttonStyle": "polywork"
   },
   {
-    "title": "GoodReads",
-    "icon": "goodreads.svg",
-    "url": "https://www.goodreads.com/topolinamarta",
-    "buttonStyle": "goodreads"
+    "title": "Dev.to",
+    "icon": "dev-to.svg",
+    "url": "https://dev.to/martapanc",
+    "buttonStyle": "dev-to"
   },
   {
     "title": "Medium",
@@ -64,6 +70,12 @@
     "icon": "steam.svg",
     "url": "https://steamcommunity.com/id/martap/",
     "buttonStyle": "steam"
+  },
+  {
+    "title": "Amazon Wish List",
+    "icon": "amazon.svg",
+    "url": "https://www.amazon.it/hz/wishlist/ls/1FJTRRMT9PB2R?ref_=wl_share",
+    "buttonStyle": "amazon"
   },
   {
     "title": "Telegram",
