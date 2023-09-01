@@ -13,7 +13,12 @@ const LinkButton = ({link}: LinkProps) => {
       <a className={`button button-${link.buttonStyle} flex flex-row justify-center`} role="button"
          href={link.url} target="_blank" rel="noopener"
       >
-        <Image className="inline pt-0 pe-3 pb-1 ps-0" src={`images/icons/${link.icon}`} alt="" width={iconSize} height={iconSize}/>
+        <Image className="inline pt-0 pe-3 pb-1 ps-0"
+               src={`images/icons/${link.icon}`}
+               alt="Icon"
+               width={iconSize}
+               height={iconSize}
+        />
 
         <span>{link.title}</span>
       </a>
