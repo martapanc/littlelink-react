@@ -23,6 +23,8 @@ export default function RootLayout({ children }: {
       <meta charSet="utf-8" />
       <meta name="author" content={data.author} />
       <meta name="description" content={data.description} />
+
+      <script async src="https://analytics.eu.umami.is/script.js" data-website-id="5a2aaef0-ab13-4130-9759-1ef42e58df2c"></script>
     </head>
     <body className={inter.className}>
       <LayoutClient>
