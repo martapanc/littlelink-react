@@ -42,12 +42,6 @@
     "buttonStyle": "goodreads"
   },
   {
-    "title": "PolyWork",
-    "icon": "polywork.svg",
-    "url": "https://www.polywork.com/marta_pancaldi",
-    "buttonStyle": "polywork"
-  },
-  {
     "title": "Dev.to",
     "icon": "dev-to.svg",
     "url": "https://dev.to/martapanc",
