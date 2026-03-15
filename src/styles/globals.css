@@ -1,36 +1,33 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@custom-variant dark (.dark &);
+
+@theme {
+    /* Font */
+    --font-primary: 'Roboto Thin', ui-sans-serif, system-ui, sans-serif;
+
+    /* Primary color scale (Tailwind blue) */
+    --color-primary-50: #eff6ff;
+    --color-primary-100: #dbeafe;
+    --color-primary-200: #bfdbfe;
+    --color-primary-300: #93c5fd;
+    --color-primary-400: #60a5fa;
+    --color-primary-500: #3b82f6;
+    --color-primary-600: #2563eb;
+    --color-primary-700: #1d4ed8;
+    --color-primary-800: #1e40af;
+    --color-primary-900: #1e3a8a;
+    --color-primary-950: #172554;
+    --color-dark: #0c1018;
+
+    /* Animations */
+    --animate-flicker: flicker 3s linear infinite;
+    --animate-shimmer: shimmer 1.3s linear infinite;
+}
 
 :root {
-    /* Default theme */
-    --background: white;
+    --background: #eef5ff;
     --foreground: #0c1018;
-
-    /* #region  !**=========== Primary Color =========== */
-    --tw-color-primary-50: 239 246 255;
-    --tw-color-primary-100: 219 234 254;
-    --tw-color-primary-200: 191 219 254;
-    --tw-color-primary-300: 147 197 253;
-    --tw-color-primary-400: 96 165 250;
-    --tw-color-primary-500: 59 130 246;
-    --tw-color-primary-600: 37 99 235;
-    --tw-color-primary-700: 29 78 216;
-    --tw-color-primary-800: 30 64 175;
-    --tw-color-primary-900: 30 58 138;
-    --tw-color-primary-950: 23 37 84;
-    --color-primary-50: rgb(var(--tw-color-primary-50)); /* #eff6ff */
-    --color-primary-100: rgb(var(--tw-color-primary-100)); /* #dbeafe */
-    --color-primary-200: rgb(var(--tw-color-primary-200)); /* #bfdbfe */
-    --color-primary-300: rgb(var(--tw-color-primary-300)); /* #93c5fd */
-    --color-primary-400: rgb(var(--tw-color-primary-400)); /* #60a5fa */
-    --color-primary-500: rgb(var(--tw-color-primary-500)); /* #3b82f6 */
-    --color-primary-600: rgb(var(--tw-color-primary-600)); /* #2563eb */
-    --color-primary-700: rgb(var(--tw-color-primary-700)); /* #1d4ed8 */
-    --color-primary-800: rgb(var(--tw-color-primary-800)); /* #1e40af */
-    --color-primary-900: rgb(var(--tw-color-primary-900)); /* #1e3a8a */
-    --color-primary-950: rgb(var(--tw-color-primary-950)); /* #172554 */
-    /* #endregion  !**======== Primary Color =========== */
 
     /* Avatar gradient colors — customise these */
     --primary-color-light: #a8c0ff;
@@ -38,7 +35,6 @@
     --primary-color-dark: #4455c3;
     --secondary-color-dark: #2f2580;
 }
-
 
 @layer components {
     .avatar-bg {
@@ -60,7 +56,7 @@
 
 @layer base {
     :not(.dark) > body {
-        background-color: #f9f9f9;
+        background-color: #eef5ff;
     }
 
     .dark > body {
@@ -174,13 +170,7 @@
         width: 32px;
         height: 24px;
         position: relative;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
         transform: rotate(0deg);
-        -webkit-transition: 0.5s ease-in-out;
-        -moz-transition: 0.5s ease-in-out;
-        -o-transition: 0.5s ease-in-out;
         transition: 0.5s ease-in-out;
         cursor: pointer;
     }
@@ -194,13 +184,7 @@
         border-radius: 3px;
         opacity: 1;
         left: 0;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
         transform: rotate(0deg);
-        -webkit-transition: 0.25s ease-in-out;
-        -moz-transition: 0.25s ease-in-out;
-        -o-transition: 0.25s ease-in-out;
         transition: 0.25s ease-in-out;
     }
 
@@ -224,16 +208,10 @@
     }
 
     .burger-icon.open span:nth-child(2) {
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
         transform: rotate(45deg);
     }
 
     .burger-icon.open span:nth-child(3) {
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
     }
 
@@ -290,4 +268,22 @@
             opacity: 0;
         }
     }
+}
+
+@keyframes flicker {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        opacity: 0.99;
+        filter: drop-shadow(0 0 1px rgba(252, 211, 77))
+                drop-shadow(0 0 15px rgba(245, 158, 11))
+                drop-shadow(0 0 1px rgba(252, 211, 77));
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+        opacity: 0.4;
+        filter: none;
+    }
+}
+
+@keyframes shimmer {
+    0% { background-position: -700px 0; }
+    100% { background-position: 700px 0; }
 }
