@@ -1,34 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LittleLink — Astro
 
-## Getting Started
+A fast, lightweight "link-in-bio" static page built with [Astro](https://astro.build) and Tailwind CSS. Forked from [LittleLink](https://littlelink.io/).
 
-First, run the development server:
+## Customisation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+### Profile & metadata
+
+Edit `src/data/data.json`:
+
+```json
+{
+  "title": "Your Name's Links",
+  "author": "Your Name",
+  "description": "All my links in one place",
+  "icon": "https://...",
+  "iconAlt": "Your Name",
+  "defaultTheme": "dark",
+  "footer": "Some **markdown** text with a [link](https://example.com)."
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Links
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Edit `src/data/links.json` — each entry is an object with:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```json
+{
+  "title": "GitHub",
+  "url": "https://github.com/yourhandle",
+  "icon": "github.svg",
+  "buttonStyle": "github"
+}
+```
 
-## Learn More
+`icon` is resolved from `public/images/icons/`. `buttonStyle` maps to a CSS class `button-<style>` defined in `src/styles/brands.css`.
 
-To learn more about Next.js, take a look at the following resources:
+### Adding new button styles
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Add a new rule in `src/styles/brands.css`:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```css
+.button-myplatform {
+  background-color: #1da1f2;
+  color: white;
+}
+```
 
-## Deploy on Vercel
+Then reference `"buttonStyle": "myplatform"` in `links.json`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Development
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+yarn dev      # start dev server at http://localhost:3003
+yarn build    # build to dist/
+yarn preview  # preview the production build
+```
+
+## Deployment
+
+The build output in `dist/` is a plain static site — deploy to any static host:
+
+- **Vercel**: connect the repo, set framework to "Other" (Astro auto-detected)
+- **Netlify**: set build command `yarn build`, publish directory `dist`
+- **GitHub Pages**: use the [Astro GitHub Pages action](https://docs.astro.build/en/guides/deploy/github/)
+
+## Credits
+
+- [LittleLink](https://littlelink.io/) by [sethcottle](https://github.com/sethcottle) — original project
+- Built with [Astro](https://astro.build) + [Tailwind CSS](https://tailwindcss.com)

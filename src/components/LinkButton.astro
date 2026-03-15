@@ -1,0 +1,26 @@
+---
+import type { Link } from '@/types/Link';
+interface Props { link: Link; }
+const { link } = Astro.props;
+const { buttonStyle, url, icon, title } = link;
+---
+
+<div class="px-2 py-1">
+  <a
+    class={`button button-${buttonStyle} flex flex-row justify-center`}
+    role="button"
+    href={url}
+    target="_blank"
+    rel="noopener"
+    aria-label={title}
+  >
+    <img
+      class="inline pt-0 pe-3 pb-1 ps-0"
+      src={`/images/icons/${icon}`}
+      alt={title}
+      width="32"
+      height="32"
+    />
+    <span>{title}</span>
+  </a>
+</div>

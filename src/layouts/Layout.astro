@@ -1,0 +1,42 @@
+---
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/700.css';
+import '@/styles/globals.css';
+import '@/styles/brands.css';
+import '@/styles/normalize.css';
+import data from '@/data/data.json';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = data.title, description = data.description } = Astro.props;
+const defaultTheme = data.defaultTheme;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content={data.author} />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="icon" href="/favicon.ico" />
+    <script async src="https://analytics.eu.umami.is/script.js"
+      data-website-id="5a2aaef0-ab13-4130-9759-1ef42e58df2c"></script>
+    <!-- Inline theme init: runs before paint to prevent flash -->
+    <script define:vars={{ defaultTheme }}>
+      (function () {
+        const stored = localStorage.getItem('theme');
+        document.documentElement.classList.add(stored || defaultTheme);
+      })();
+    </script>
+  </head>
+  <body>
+    <main id="content">
+      <slot />
+    </main>
+  </body>
+</html>
